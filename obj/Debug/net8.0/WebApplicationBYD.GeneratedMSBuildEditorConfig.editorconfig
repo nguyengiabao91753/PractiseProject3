@@ -17,47 +17,47 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplicationBYD
 build_property.RootNamespace = WebApplicationBYD
-build_property.ProjectDir = C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\
+build_property.ProjectDir = C:\Users\ERAGON\source\repos\DemoProject3\PractiseProject3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD
+build_property.MSBuildProjectDirectory = C:\Users\ERAGON\source\repos\DemoProject3\PractiseProject3
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/CategoryAdmin/Add.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/CategoryAdmin/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/CategoryAdmin/List.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/CategoryAdmin/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlBZG1pblxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/DashBoardAdmin/Index.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/DashBoardAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaEJvYXJkQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/LoginAdmin/Index.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/LoginAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9naW5BZG1pblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/ProductAdmin/Add.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/ProductAdmin/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/ProductAdmin/List.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/ProductAdmin/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/Views/Home/Index.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/LuyentapProject3/WebApplicationBYD/_ViewImports.cshtml]
+[C:/Users/ERAGON/source/repos/DemoProject3/PractiseProject3/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = X1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
