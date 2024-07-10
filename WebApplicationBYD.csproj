@@ -8,10 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\" />
     <Folder Include="wwwroot\Admin\images\" />
     <Folder Include="wwwroot\User\" />
   </ItemGroup>
