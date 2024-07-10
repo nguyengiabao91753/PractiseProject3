@@ -55,7 +55,7 @@ public partial class DatabaseContext : DbContext
     {
         modelBuilder.Entity<Account>(entity =>
         {
-            entity.HasKey(e => e.AccountId).HasName("PK__Accounts__349DA586B3BD5EC9");
+            entity.HasKey(e => e.AccountId).HasName("PK__Accounts__349DA586F87B584F");
 
             entity.Property(e => e.AccountId)
                 .ValueGeneratedOnAdd()
@@ -76,7 +76,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Category>(entity =>
         {
-            entity.HasKey(e => e.CateId).HasName("PK__Categori__27638D7470609146");
+            entity.HasKey(e => e.CateId).HasName("PK__Categori__27638D74504C5E69");
 
             entity.Property(e => e.CateId).HasColumnName("CateID");
             entity.Property(e => e.CateName).HasMaxLength(50);
@@ -84,7 +84,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<ImportOrder>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Import_o__C3905BAF1750A686");
+            entity.HasKey(e => e.OrderId).HasName("PK__Import_o__C3905BAFC8F0F03B");
 
             entity.ToTable("Import_orders");
 
@@ -94,15 +94,21 @@ public partial class DatabaseContext : DbContext
                 .HasColumnType("datetime");
             entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
             entity.Property(e => e.Total).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.UserId).HasColumnName("UserID");
 
             entity.HasOne(d => d.Supplier).WithMany(p => p.ImportOrders)
                 .HasForeignKey(d => d.SupplierId)
                 .HasConstraintName("FK__Import_or__Suppl__5EBF139D");
+
+            entity.HasOne(d => d.User).WithMany(p => p.ImportOrders)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Import_or__UserI__5FB337D6");
         });
 
         modelBuilder.Entity<ImportOrderItem>(entity =>
         {
-            entity.HasKey(e => e.OrderItemId).HasName("PK__Import_o__57ED06A1391D1A3C");
+            entity.HasKey(e => e.OrderItemId).HasName("PK__Import_o__57ED06A14177FB5A");
 
             entity.ToTable("Import_order_items");
 
@@ -115,21 +121,21 @@ public partial class DatabaseContext : DbContext
             entity.HasOne(d => d.Order).WithMany(p => p.ImportOrderItems)
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Import_or__Order__619B8048");
+                .HasConstraintName("FK__Import_or__Order__628FA481");
 
             entity.HasOne(d => d.Product).WithMany(p => p.ImportOrderItems)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Import_or__Produ__628FA481");
+                .HasConstraintName("FK__Import_or__Produ__6383C8BA");
 
             entity.HasOne(d => d.Warehouse).WithMany(p => p.ImportOrderItems)
                 .HasForeignKey(d => d.WarehouseId)
-                .HasConstraintName("FK__Import_or__Wareh__6383C8BA");
+                .HasConstraintName("FK__Import_or__Wareh__6477ECF3");
         });
 
         modelBuilder.Entity<Inventory>(entity =>
         {
-            entity.HasKey(e => e.InventoryId).HasName("PK__Inventor__F5FDE6B37C149DD4");
+            entity.HasKey(e => e.InventoryId).HasName("PK__Inventor__F5FDE6B3908BA9B8");
 
             entity.ToTable("Inventory");
 
@@ -138,16 +144,16 @@ public partial class DatabaseContext : DbContext
 
             entity.HasOne(d => d.Product).WithMany(p => p.Inventories)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Inventory__Produ__6754599E");
+                .HasConstraintName("FK__Inventory__Produ__68487DD7");
 
             entity.HasOne(d => d.Warehouse).WithMany(p => p.Inventories)
                 .HasForeignKey(d => d.WarehouseId)
-                .HasConstraintName("FK__Inventory__Wareh__66603565");
+                .HasConstraintName("FK__Inventory__Wareh__6754599E");
         });
 
         modelBuilder.Entity<Level>(entity =>
         {
-            entity.HasKey(e => e.LevelId).HasName("PK__Levels__09F03C0618446B32");
+            entity.HasKey(e => e.LevelId).HasName("PK__Levels__09F03C0603304957");
 
             entity.Property(e => e.LevelId).HasColumnName("LevelID");
             entity.Property(e => e.LevelName).HasMaxLength(50);
@@ -155,7 +161,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<LevelHasPermission>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__level_ha__3214EC070A7ADCCD");
+            entity.HasKey(e => e.Id).HasName("PK__level_ha__3214EC070DB4D3BA");
 
             entity.ToTable("level_has_permissions");
 
@@ -172,7 +178,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Module>(entity =>
         {
-            entity.HasKey(e => e.ModuleId).HasName("PK__Modules__2B747787783A9527");
+            entity.HasKey(e => e.ModuleId).HasName("PK__Modules__2B747787D04ABA1E");
 
             entity.Property(e => e.ModuleId).HasColumnName("ModuleID");
             entity.Property(e => e.ModuleName).HasMaxLength(50);
@@ -180,7 +186,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAF70307C0B");
+            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAF177A22A6");
 
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
             entity.Property(e => e.CreatedAt)
@@ -199,7 +205,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<OrderItem>(entity =>
         {
-            entity.HasKey(e => e.OrderItemId).HasName("PK__OrderIte__57ED06A1ADBCCD68");
+            entity.HasKey(e => e.OrderItemId).HasName("PK__OrderIte__57ED06A11A665650");
 
             entity.Property(e => e.OrderItemId).HasColumnName("OrderItemID");
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
@@ -219,7 +225,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Permission>(entity =>
         {
-            entity.HasKey(e => e.PerId).HasName("PK__Permissi__496D3DD0E9B70294");
+            entity.HasKey(e => e.PerId).HasName("PK__Permissi__496D3DD01A674B4B");
 
             entity.ToTable("Permission");
 
@@ -233,7 +239,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6ED600B7B82");
+            entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6EDE2A37E70");
 
             entity.Property(e => e.ProductId).HasColumnName("ProductID");
             entity.Property(e => e.CateId).HasColumnName("CateID");
@@ -254,7 +260,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<ProductImage>(entity =>
         {
-            entity.HasKey(e => e.ProductImageId).HasName("PK__Product___5721CE5158C987D5");
+            entity.HasKey(e => e.ProductImageId).HasName("PK__Product___5721CE51053B581A");
 
             entity.ToTable("Product_Images");
 
@@ -269,7 +275,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Supplier>(entity =>
         {
-            entity.HasKey(e => e.SupplierId).HasName("PK__Supplier__4BE66694EAA77C2F");
+            entity.HasKey(e => e.SupplierId).HasName("PK__Supplier__4BE6669407E15C1C");
 
             entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
             entity.Property(e => e.ContactEmail).HasMaxLength(100);
@@ -280,9 +286,9 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC207147F1");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC481C6BD7");
 
-            entity.HasIndex(e => e.Email, "UQ__Users__A9D105341E4FB615").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Users__A9D105342EEFE565").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.CreatedAt)
@@ -296,7 +302,7 @@ public partial class DatabaseContext : DbContext
 
         modelBuilder.Entity<Warehouse>(entity =>
         {
-            entity.HasKey(e => e.WarehouseId).HasName("PK__Warehous__2608AFD92FCFDC38");
+            entity.HasKey(e => e.WarehouseId).HasName("PK__Warehous__2608AFD937540449");
 
             entity.ToTable("Warehouse");
 

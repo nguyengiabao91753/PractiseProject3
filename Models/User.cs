@@ -21,5 +21,7 @@ public partial class User
 
     public virtual Account? Account { get; set; }
 
+    public virtual ICollection<ImportOrder> ImportOrders { get; set; } = new List<ImportOrder>();
+
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

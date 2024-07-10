@@ -470,4 +470,4 @@ C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\
 C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\WebApplicationBYD.genruntimeconfig.cache
 C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\ref\WebApplicationBYD.dll
 C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\WebApplicationBYD.sourcelink.json
-C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\WebAppli.62E59F6C.Up2Date
+C:\Users\Admin\source\repos\LuyentapProject3\WebApplicationBYD\obj\Debug\net8.0\WebApplicationBYD.csproj.CopyComplete

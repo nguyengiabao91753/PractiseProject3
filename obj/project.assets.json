@@ -10705,19 +10705,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ERAGON\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ERAGON\\source\\repos\\DemoProject3\\PractiseProject3\\WebApplicationBYD.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\LuyentapProject3\\WebApplicationBYD\\WebApplicationBYD.csproj",
       "projectName": "WebApplicationBYD",
-      "projectPath": "C:\\Users\\ERAGON\\source\\repos\\DemoProject3\\PractiseProject3\\WebApplicationBYD.csproj",
-      "packagesPath": "C:\\Users\\ERAGON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ERAGON\\source\\repos\\DemoProject3\\PractiseProject3\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\LuyentapProject3\\WebApplicationBYD\\WebApplicationBYD.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\LuyentapProject3\\WebApplicationBYD\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ERAGON\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10738,11 +10743,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
